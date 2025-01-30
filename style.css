@@ -1,0 +1,36 @@
+.conatiner{
+    background-color: blue;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    
+}
+.ball{
+    background-color: red;
+    height: 83px;
+    width: 79px;
+    bottom: 0;
+    left: 0;
+    position:absolute;
+    border-radius: 80%;
+    animation: animateX 3s linear infinite,animateY 2s ease-out alternate  infinite;
+    
+}
+
+@keyframes animateX {
+    from{
+        left: 0;
+    }
+    to{
+        left:100%;
+    }
+}
+
+@keyframes animateY {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}
